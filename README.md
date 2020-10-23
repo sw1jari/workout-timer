@@ -1,5 +1,5 @@
 # workout-timer
-workout timer with statusbar in python, idk why it's in python either
+workout timer with statusbar in python
 
 has the option to specify:
 - amount of sets
