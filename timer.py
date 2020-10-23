@@ -4,7 +4,7 @@ import os
 #TODO: Implement this in another language that can run natively on android lmaooo
 
 class Timer:
-    def __init__(self, sets, set_time=0, supersets=0, set_rest_time=0, super_rest_time=0):
+    def __init__(self, sets=0, set_time=0, supersets=0, set_rest_time=0, super_rest_time=0):
         self.sets = sets
         self.set_time = set_time
         self.supersets = supersets
