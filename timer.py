@@ -12,15 +12,15 @@ class Timer:
         self.super_rest_time = super_rest_time
 
     def setup(self):
-        if not sets:
+        if not self.sets:
             self.sets = int(input("How many sets do you want to do? "))
-        if not set_time:
+        if not self.set_time:
             self.set_time = int(input("How long do you want your sets to be? "))
-        if not set_rest_time:
+        if not self.set_rest_time:
             self.set_rest_time = int(input("How much rest between sets do you want? "))
-        if not supersets:
+        if not self.supersets:
             self.supersets = int(input("How many supersets do you want to do? "))
-        if not super_rest_time:
+        if not self.super_rest_time:
             self.super_rest_time = int(input("How much rest between supersets do you want? "))
 
     def run(self):
