@@ -26,7 +26,7 @@ class Timer:
     def run(self):
         input("Press ENTER to start.")
         for x in range(self.supersets):
-            if x > 0:
+            if x > 0 and self.super_rest_time > 0:
                 self.countdown(self.super_rest_time, "Time for superset rest")
             for i in range(self.sets):
                 self.countdown(5, f"Starting set {i + 1} of {self.sets} in 5s")
@@ -39,8 +39,6 @@ class Timer:
               f"Set rest time (s): {self.set_rest_time}        Superset rest time (s): {self.super_rest_time}")
 
     def countdown(self, seconds, message):
-        if seconds is None:
-            return
         for s in range(seconds):
             clear()
             self.statusbar()
@@ -70,6 +68,6 @@ def menu():
     elif choice == 'regular':
         regular()
     elif choice == 'abs':
-        regular(8, 60, 1, 3, None)
+        regular(8, 60, 1, 3, 0)
 
 menu()
