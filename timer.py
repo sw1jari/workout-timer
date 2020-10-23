@@ -28,7 +28,7 @@ class Timer:
         for x in range(self.supersets):
             if x > 0:
                 self.countdown(self.super_rest_time, "Time for superset rest")
-            for i in range(3):
+            for i in range(self.sets):
                 self.countdown(5, f"Starting set {i + 1} of {self.sets} in 5s")
                 self.countdown(self.set_time, "Go!")
                 self.countdown(self.set_rest_time, "Time to rest")
