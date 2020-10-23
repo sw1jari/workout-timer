@@ -50,6 +50,7 @@ class Timer:
 
 def regular(sets=0, set_time=0, supersets=0, set_rest_time=0, super_rest_time=0):
     timer = Timer(sets, set_time, supersets, set_rest_time, super_rest_time)
+    timer.setup()
     timer.run()
 
 def seluyanov():
